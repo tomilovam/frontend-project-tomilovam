@@ -8,3 +8,6 @@
 [![brain-even](https://asciinema.org/a/3AXLpQNytSAjpYVzfAN6jLHv9)
 
 [![brain-calc](https://asciinema.org/a/HFuuOJfEDL0sJoWV882VxD8k0)
+
+[![brain-gcd](https://asciinema.org/a/G5Rc3Zyju0ULgAICRfAcmSm1I)
+
