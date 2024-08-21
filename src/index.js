@@ -1,13 +1,12 @@
 import readline from 'readline-sync';
-import greet from './cli.js';
+import { greet } from './cli.js';
 
 export const randomNum = (min = 0, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export const randomOperator = () => {
-	const operators = ['+', '-', '*'];
-	return operators[Math.floor(Math.random() * operators.length)];
-  };
-  
+  const operators = ['+', '-', '*'];
+  return operators[Math.floor(Math.random() * operators.length)];
+};
 export const playGame = (instruction, getQuestionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
   const name = greet();
@@ -23,7 +22,7 @@ export const playGame = (instruction, getQuestionAndAnswer) => {
 
     if (String(answer) === String(correctAnswer)) {
       console.log('Correct!');
-      correctAnswerCount++;
+      correctAnswerCount += 1;
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);

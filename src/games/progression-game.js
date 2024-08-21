@@ -8,7 +8,7 @@ const generateProgression = (progressionLength, initialElement, increment) => {
   return progression;
 };
 
-export default () => {
+const runProgressionGame = () => {
   const instruction = 'What number is missing in the progression?';
 
   const getQuestionAndAnswer = () => {
@@ -28,3 +28,5 @@ export default () => {
 
   playGame(instruction, getQuestionAndAnswer);
 };
+
+export { runProgressionGame };

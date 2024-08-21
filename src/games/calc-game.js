@@ -24,13 +24,15 @@ const getRandomExpression = () => {
   return { question, correctAnswer };
 };
 
-export default () => {
+const runCalcGame = () => {
   const instruction = 'What is the result of the expression?';
 
   const getQuestionAndAnswer = () => {
     const { question, correctAnswer } = getRandomExpression();
-	return { question, correctAnswer };
+    return { question, correctAnswer };
   };
 
   playGame(instruction, getQuestionAndAnswer);
 };
+
+export { runCalcGame };

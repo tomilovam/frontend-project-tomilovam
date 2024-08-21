@@ -10,8 +10,10 @@ const getQuestionAndAnswer = () => {
   return { question, correctAnswer };
 };
 
-export default () => {
+const runEvenGame = () => {
   const instruction = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   playGame(instruction, getQuestionAndAnswer);
 };
+
+export { runEvenGame };
