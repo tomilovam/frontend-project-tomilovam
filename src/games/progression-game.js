@@ -1,9 +1,9 @@
 import { randomNum, playGame } from '../index.js';
 
 const generateProgression = (progressionLength, initialElement, increment) => {
-  const progression = [initialElement];
-  for (let i = 1; i < progressionLength; i += 1) {
-    progression.push(progression[i - 1] + increment);
+  const progression = [];
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(initialElement + i * increment);
   }
   return progression;
 };
