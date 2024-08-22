@@ -4,7 +4,6 @@ import { greet } from './cli.js';
 export const randomNum = (min = 0, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export const playGame = (instruction, getQuestionAndAnswer) => {
-  console.log('Welcome to the Brain Games!');
   const name = greet();
   console.log(instruction);
 
