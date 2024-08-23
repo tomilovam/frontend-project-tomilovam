@@ -34,4 +34,4 @@ const runProgressionGame = () => {
   playGame(instruction, getQuestionAndAnswer);
 };
 
-export { runProgressionGame };
+export default runProgressionGame;

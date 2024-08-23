@@ -28,4 +28,4 @@ const runPrimeGame = () => {
   playGame(instruction, getQuestionAndAnswer);
 };
 
-export { runPrimeGame };
+export default runPrimeGame;

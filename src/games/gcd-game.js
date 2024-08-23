@@ -26,4 +26,4 @@ const runGcdGame = () => {
   playGame(instruction, getQuestionAndAnswer);
 };
 
-export { runGcdGame };
+export default runGcdGame;

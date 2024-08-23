@@ -39,4 +39,4 @@ const runCalcGame = () => {
   playGame(instruction, getQuestionAndAnswer);
 };
 
-export { runCalcGame };
+export default runCalcGame;

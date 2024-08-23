@@ -22,4 +22,4 @@ const runEvenGame = () => {
   playGame(instruction, getQuestionAndAnswer);
 };
 
-export { runEvenGame };
+export default runEvenGame;
