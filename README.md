@@ -9,8 +9,11 @@
 ### Brain Games is a set of five console games. Each game asks questions that need to be answered correctly.
 
 ### Installing and running the game:
- Install packages for the game using the command: npm install <game name>. 
+
+ Install packages for the game using the command: `npm install <game name>`. 
+
  Game names: brain-even, brain-calc, brain-gcd, brain-prime, brain-progression.
+ 
  Run the games by entering their names into the terminal.
 
 ### node.js version 22.5.1
