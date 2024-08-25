@@ -11,9 +11,7 @@ const generateProgression = (progressionLength, initialElement, increment) => {
 };
 
 const generateQuestion = () => {
-  const minInitialElement = 1;
-  const maxInitialElement = 50;
-  const initialElement = randomNum(minInitialElement, maxInitialElement);
+  const initialElement = randomNum(1, 50);
   const progressionLength = randomNum(5, 10);
   const increment = randomNum(2, 9);
   const progression = generateProgression(progressionLength, initialElement, increment);

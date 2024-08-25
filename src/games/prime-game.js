@@ -10,9 +10,7 @@ const isPrime = (question) => {
 };
 
 const generateQuestion = () => {
-  const minRandomNum = 2;
-  const maxRandomNum = 50;
-  const question = randomNum(minRandomNum, maxRandomNum);
+  const question = randomNum(2, 50);
   return { question };
 };
 

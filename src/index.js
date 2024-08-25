@@ -1,13 +1,14 @@
 import readline from 'readline-sync';
-import greet from './cli.js';
 
 export const randomNum = (min = 0, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-export const playGame = (instruction, getQuestionAndAnswer) => {
-  const name = greet();
-  console.log(instruction);
+const roundsCount = 3;
 
-  const roundsCount = 3;
+export const playGame = (instruction, getQuestionAndAnswer) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readline.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(instruction);
 
   for (let i = 0; i < roundsCount; i += 1) {
     const { question, correctAnswer } = getQuestionAndAnswer();

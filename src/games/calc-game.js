@@ -2,7 +2,7 @@ import { randomNum, playGame } from '../index.js';
 
 const instruction = 'What is the result of the expression?';
 
-const randomOperator = () => {
+const generateRandomOperator = () => {
   const operators = ['+', '-', '*'];
   return operators[Math.floor(Math.random() * operators.length)];
 };
@@ -20,19 +20,14 @@ const calculate = (number1, number2, operator) => {
   }
 };
 
-const getRandomExpression = () => {
+const getQuestionAndAnswer = () => {
   const number1 = randomNum(1, 100);
   const number2 = randomNum(1, 100);
-  const operator = randomOperator();
+  const operator = generateRandomOperator();
   const question = `${number1} ${operator} ${number2}`;
   const correctAnswer = calculate(number1, number2, operator);
 
   return { question, correctAnswer: String(correctAnswer) };
-};
-
-const getQuestionAndAnswer = () => {
-  const { question, correctAnswer } = getRandomExpression();
-  return { question, correctAnswer };
 };
 
 const runCalcGame = () => {
